@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/** index css **/
+.encabezado{
+    width: 100%;
+    padding: 20px 50px 0px 50px;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado .titulo p{
+    font-size: 60px;
+    color: #324158;
+    font-weight: 600;
+    border-bottom: 4px solid #888888;
+    cursor: pointer;
+}
+.menu-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.menu-navegacion a{
+    padding: 10px 40px 10px 40px;
+    background-color: #BCD2E4;
+    color: #353535;
+    text-decoration: none;
+}
+.menu-navegacion a:hover{
+    background-color:#98a8b6;
+}
+
+
+.descatacados-index p{
+    width: 100%;
+    padding: 10px 0 10px 70px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.productos-comentarios-index{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.productos-index{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 70px;
+}
+.productos-index img{
+    width: 200px;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+}
+.productos-index img:hover{
+    border-radius: 20%;
+}
+.productos-index a{
+    padding: 5px;
+    background-color: #fff;
+    color: #353535;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.productos-index a:hover{
+    background-color: rgb(236, 236, 236);
+}
+.producto1-index{
+    width: 210px;
+    height: 280px;
+    background-color: #C8DEF0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.producto2-index{
+    width: 210px;
+    height: 280px;
+    border-radius: 5px;
+    background-color: #C8DEF0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.producto3-index{
+    width: 210px;
+    height: 280px;
+    border-radius: 5px;
+    background-color: #C8DEF0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comentarios-index{
+    width: 45%;
+    display: flex;
+    position: relative;
+    margin-left: 5px;
+    flex-direction: column;
+    gap: 10px;
+    animation-name: comentarios;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes comentarios{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.comentarios-index h3{
+    width: 100%;
+    font-size: 20px;
+
+}
+.comentarios-index .fecha{
+    font-weight: 600;
+    text-align: right;
+}
+.comentarios-index .percy-index{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+.comentarios-index .bryan-index{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+.footer-unico{
+    width: 100%;
+    background-color: #D95A4F;
+    padding: 20px 60px 20px 60px;
+}
+.footer-unico .footer-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-unico .footer-fecha{
+    position: relative;
+    top: -20px;
+}
+.footer-unico .derechos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+/*css nostros*/
+.titulo-nosotros p{
+    width: 100%;
+    padding: 10px 0 10px 70px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.valores-comentarios-nosotros{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.valores-nosotros{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 70px;
+}
+.mision-nosotros{
+    width: 600px;
+    background-color: #C9DFF1;
+    padding: 10px 10px 30px 10px;
+    border-radius: 5px;
+}
+ .vision-nosotros{
+    width: 600px;
+    background-color: #C9DFF1;
+    padding: 10px 10px 30px 10px;
+    border-radius: 5px;
+}
+ .valor-nosotros{
+    width: 600px;
+    background-color: #C9DFF1;
+    padding: 10px 10px 30px 10px;
+    border-radius: 5px;
+}
+.valor-nosotros ul li{
+    margin-left: 2em;
+}
+.comentarios-nosotros{
+    width: 45%;
+    display: flex;
+    position: relative;
+    margin-left: 5px;
+    flex-direction: column;
+    gap: 10px;
+    animation-name: comentarios;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes comentarios{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.comentarios-nosotros h3{
+    width: 100%;
+    font-size: 20px;
+}
+.comentarios-nosotros .fecha{
+    font-weight: 600;
+    text-align: right;
+}
+.comentarios-nosotros .percy-nosotros{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+.comentarios-nosotros .bryan-nosotros{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+.comentarios-nosotros .sergio-nosotros{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+
+/* css productos*/
+.comentarios-productos{
+    width: 45%;
+    display: flex;
+    position: relative;
+    margin-left: 5px;
+    flex-direction: column;
+    gap: 10px;
+    animation-name: comentarios;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes comentarios{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.comentarios-productos h3{
+    width: 100%;
+    font-size: 20px;
+}
+.comentarios-productos .fecha{
+    font-weight: 600;
+    text-align: right;
+}
+.comentarios-productos .percy-productos{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+.comentarios-productos .bryan-productos{
+    width: 400px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 3px;
+}
+
+/*css contacto*/
+
+.titulo-contacto{
+    width: 600px;
+    margin-left: 120px;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 500;
+}
+video{
+    width: 600px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.explicacion-integrantes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.explicacion-integrantes img{
+    width: 100px;
+    border-radius: 50%;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1.5s;
+}
+.explicacion-integrantes img:hover{
+    transform: rotate(360deg);
+}
+.integrantes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.integrantes .brayan{
+    width: 300px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.integrantes .percy{
+    width: 300px;
+    padding: 10px;
+    background-color: #EBA9A3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
